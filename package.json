@@ -1,0 +1,11 @@
+{
+  "name": "pranked",
+  "version": "1.0.0",
+  "description": "Prank your colleagues with this simple Node.js command line tool.",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/ShubhamPatilsd/pranked.git",
+  "author": "Shubham <shubhampatilsd@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
