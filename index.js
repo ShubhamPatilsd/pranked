@@ -33,5 +33,6 @@ fs.readdir(process.cwd(), async (err, files) => {
   // chalkAnimation.rainbow(figlet("You just got pranked!"));
   figlet("You just got pranked!", (err, data) => {
     console.log(gradient.pastel.multiline(data));
+    console.log("By me");
   });
 });
