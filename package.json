@@ -7,5 +7,9 @@
   "repository": "https://github.com/ShubhamPatilsd/pranked.git",
   "author": "Shubham <shubhampatilsd@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "chalk-animation": "^2.0.2",
+    "figlet": "^1.5.2"
+  }
 }

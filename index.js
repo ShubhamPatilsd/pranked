@@ -2,6 +2,7 @@ import { exec as temp_exec } from "child_process";
 import util from "util";
 import fs from "fs";
 import path from "path";
+import figlet from "figlet";
 const exec = util.promisify(temp_exec);
 
 try {
@@ -25,4 +26,6 @@ fs.readdir(process.cwd(), (err, files) => {
       });
     }
   }
+
+  chalkAnimation.rainbow(figlet("You just got pranked!"));
 });
