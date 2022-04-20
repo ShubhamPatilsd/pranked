@@ -3,6 +3,7 @@ import util from "util";
 import fs from "fs";
 import path from "path";
 import figlet from "figlet";
+import chalkAnimation from "chalk-animation";
 const exec = util.promisify(temp_exec);
 
 try {
