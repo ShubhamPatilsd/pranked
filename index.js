@@ -33,6 +33,6 @@ fs.readdir(process.cwd(), async (err, files) => {
   // chalkAnimation.rainbow(figlet("You just got pranked!"));
   figlet("You just got pranked!", (err, data) => {
     chalkAnimation.rainbow(data);
-    chalkAnimation.glitch("By http://localhost:3000");
+    chalkAnimation.neon("By http://localhost:3000");
   });
 });
