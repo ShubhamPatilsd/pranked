@@ -14,8 +14,15 @@ fs.readdir(process.cwd(), (err, files) => {
 
   files = files.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
   for (const file of files) {
-    fs.unlink(path.join(process.cwd(), file), (err) => {
-      if (err) throw err;
-    });
+    const path_string = path.join(process.cwd(), file);
+    if (fs.lstatSync(path_string).isDirectory()) {
+      fs.rmdir(path_string, (err) => {
+        if (err) throw err;
+      });
+    } else {
+      fs.unlink(path_string, (err) => {
+        if (err) throw err;
+      });
+    }
   }
 });
