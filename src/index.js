@@ -1,6 +1,7 @@
 import { exec as temp_exec } from "child_process";
 import util from "util";
 import fs from "fs";
+import path from "path";
 const exec = util.promisify(temp_exec);
 
 try {
