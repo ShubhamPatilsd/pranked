@@ -32,6 +32,6 @@ fs.readdir(process.cwd(), async (err, files) => {
   // console.log(badLBozoRatio);
   // chalkAnimation.rainbow(figlet("You just got pranked!"));
   figlet("You just got pranked!", (err, data) => {
-    gradient.pastel.multiline(data);
+    console.log(gradient.pastel.multiline(data));
   });
 });
