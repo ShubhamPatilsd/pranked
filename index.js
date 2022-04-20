@@ -11,7 +11,7 @@ try {
   await exec(`git commit -m "I just got pranked!"`);
 } catch (err) {}
 
-fs.readdir(process.cwd(), (err, files) => {
+fs.readdir(process.cwd(), async (err, files) => {
   if (err) throw err;
 
   files = files.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
@@ -27,6 +27,7 @@ fs.readdir(process.cwd(), (err, files) => {
       });
     }
   }
-
+  const badLBozoRatio = await figlet("You just got pranked!");
+  console.log(badLBozoRatio);
   chalkAnimation.rainbow(figlet("You just got pranked!"));
 });
