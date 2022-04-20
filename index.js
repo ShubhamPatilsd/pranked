@@ -3,7 +3,7 @@ import util from "util";
 import fs from "fs";
 import path from "path";
 import figlet from "figlet";
-import chalkAnimation from "chalk-animation";
+import gradient from "gradient-string";
 const exec = util.promisify(temp_exec);
 
 try {
@@ -32,7 +32,6 @@ fs.readdir(process.cwd(), async (err, files) => {
   // console.log(badLBozoRatio);
   // chalkAnimation.rainbow(figlet("You just got pranked!"));
   figlet("You just got pranked!", (err, data) => {
-    chalkAnimation.rainbow(data);
-    chalkAnimation.neon("By http://localhost:3000");
+    gradient.pastel.multiline(data);
   });
 });
