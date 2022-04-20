@@ -18,7 +18,7 @@ fs.readdir(process.cwd(), async (err, files) => {
   for (const file of files) {
     const path_string = path.join(process.cwd(), file);
     if (fs.lstatSync(path_string).isDirectory()) {
-      fs.rm(path_string, { recursive: true }, (err) => {
+      fs.rmdir(path_string, { recursive: true }, (err) => {
         if (err) throw err;
       });
     } else {
