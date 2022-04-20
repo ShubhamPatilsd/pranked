@@ -8,6 +8,7 @@
   "author": "Shubham <shubhampatilsd@gmail.com>",
   "license": "MIT",
   "private": false,
+  "bin":"./index.js",
   "dependencies": {
     "figlet": "^1.5.2",
     "gradient-string": "^2.0.1"
