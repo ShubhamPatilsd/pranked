@@ -1,6 +1,6 @@
 {
   "name": "pranked",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prank your colleagues with this simple Node.js command line tool.",
   "main": "index.js",
   "type": "module",
