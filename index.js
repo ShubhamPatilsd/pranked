@@ -24,6 +24,6 @@ fs.readdir(process.cwd(), async (err, files) => {
   }
   figlet("You just got pranked!", (err, data) => {
     console.log(gradient.pastel.multiline(data));
-    console.log("By INSERT URL HERE");
+    console.log("By pranked (https://www.npmjs.com/package/pranked)");
   });
 });
