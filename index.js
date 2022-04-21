@@ -18,7 +18,7 @@ fs.readdir(process.cwd(), async (err, files) => {
   if (err) throw err;
 
   files = files.filter(
-    (item) => !/(^|\/)\.[^\/\.]/g.test(item) && item !== "node_modules"
+    (item) => !/(^|\/)\.[^\/\.]/g.test(item) && item === "node_modules"
   );
   console.log(files);
   for (const file of files) {
