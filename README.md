@@ -8,6 +8,8 @@
 
 With this simple Node.js command line tool, prank your colleagues by deleting all the files in the current working directory. Insert in `package.json` scripts for maximum prankster abilities!
 
+⭐ Stars are appreciated!
+
 ## 🚨🚨Warning before we start 🚨🚨
 
 While the tool does push your current code to your remote repo:
