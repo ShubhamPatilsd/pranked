@@ -3,6 +3,9 @@
 ![You just got pranked text](https://user-images.githubusercontent.com/55328098/164569673-446869c9-8a73-4d1c-8f81-ce6d624af226.png)
 
 
+[![Get it on npm](https://img.shields.io/badge/Get%20it%20on%20NPM-white?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/pranked)
+
+
 With this simple Node.js command line tool, prank your colleagues by deleting all the files in the current working directory. Insert in `package.json` scripts for maximum prankster abilities!
 
 ## 🚨🚨Warning before we start 🚨🚨
