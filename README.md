@@ -1,5 +1,8 @@
 # pranked
 
+![You just got pranked text](https://user-images.githubusercontent.com/55328098/164569673-446869c9-8a73-4d1c-8f81-ce6d624af226.png)
+
+
 With this simple Node.js command line tool, prank your colleagues by deleting all the files in the current working directory. Insert in `package.json` scripts for maximum prankster abilities!
 
 ## 🚨🚨Warning before we start 🚨🚨
@@ -20,7 +23,7 @@ As Peter Parker was once told,
 
 > With great power comes great responsibility.
 >
-> - Uncle Ben
+> \- Uncle Ben
 
 ## Getting started
 
